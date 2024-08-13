@@ -21,6 +21,9 @@ Whereas recall might be more important because it's important to catch as many p
 <img width="326" alt="image" src="https://github.com/user-attachments/assets/1c29c17a-8ed6-462d-8951-4a6ff8a162d6">
 Building a resblock that will be used while making U-NET From Scratch for Image Segmentation. Resblock generally has residual connection which are used to maintain input signal these residual connections enable as to make very deep residual networks .
 <img width="653" alt="image" src="https://github.com/user-attachments/assets/50d1593a-1591-4889-90b4-81589aff53d6">
+building the standard structure of resunet that contains of 4 downsampling blocks 1 forward and 4 upsampling blocks.
 <img width="362" alt="image" src="https://github.com/user-attachments/assets/b72b93d3-43ae-459b-91ba-9e543db55377">
-![Uploading image.png…]()
+output of our model
+![Screenshot 2024-08-13 101239](https://github.com/user-attachments/assets/6ebcdfbb-670a-4d09-bc1b-5257c221ea67)
+
 
