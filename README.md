@@ -29,6 +29,10 @@ After the model makes predictions, a confusion matrix is drawn to evaluate its p
   <img width="326" alt="Confusion Matrix" src="https://github.com/user-attachments/assets/0b929f85-8035-40dd-a86e-35edde82cd22">
 </p>
 
+<p align="center">
+  ![Screenshot 2024-08-10 165621](https://github.com/user-attachments/assets/37c0d97e-8da2-4b27-b3d6-5bcdba79021d)
+</p>
+
 ## Building the ResBlock 🧱
 
 ResBlocks with residual connections are used to maintain input signals. These residual connections enable the creation of very deep residual networks, essential for the U-Net architecture.
