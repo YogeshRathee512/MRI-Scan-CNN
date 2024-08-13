@@ -19,6 +19,7 @@ In medical diagnosis, precision maybe  more important than recall as false posit
 Whereas recall might be more important because it's important to catch as many positive cases as possible, even if it leads to some false positives.
 
 <img width="326" alt="image" src="https://github.com/user-attachments/assets/1c29c17a-8ed6-462d-8951-4a6ff8a162d6">
+Building a resblock that will be used while making U-NET From Scratch for Image Segmentation. Resblock generally has residual connection which are used to maintain input signal these residual connections enable as to make very deep residual networks .
 <img width="653" alt="image" src="https://github.com/user-attachments/assets/50d1593a-1591-4889-90b4-81589aff53d6">
 <img width="362" alt="image" src="https://github.com/user-attachments/assets/b72b93d3-43ae-459b-91ba-9e543db55377">
 ![Uploading image.png…]()
