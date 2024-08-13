@@ -1,30 +1,54 @@
-# MRI-Scan-CNN
+# MRI-Scan-CNN 🧠
 
-Dataframe containing image , mask and image id as input and perform 2 type of prediction on the image
-Initially, image is passed through the classification network(ResNet) which predicts whether the image has defect or not, the model
-predicts 98% accuracy that the image has defect or not (defect means tumor) , if the model labels the images as defect it passes the image to the
-segmentation network (U-net build from scratch) then the  location of defect is found.
+This project involves developing a deep learning pipeline that processes MRI scans to detect and locate brain tumors. The process is divided into two main tasks:
 
-<img width="670" alt="image" src="https://github.com/user-attachments/assets/3e720c7c-2145-4960-aecd-6f41ee6d9ef6">
+1. **Classification**: Identify whether the MRI scan contains a defect (tumor).
+2. **Segmentation**: If a defect is detected, precisely locate it within the image.
 
-leveraging transfer learning with resunet architecture which was original trainned on imagenet dataset(1 million images) and 1000 classes we remove the head and add custom head for binary classification.
+## Project Pipeline Overview 🔄
 
-<img width="630" alt="image" src="https://github.com/user-attachments/assets/7f46c57d-5378-4a12-924f-86bbabbba3a2">
+Initially, the MRI scan is passed through a classification network (ResNet) to determine if the image contains a defect. If a defect is detected, the image is then passed to a segmentation network (U-Net) to identify the exact location of the defect.
 
-Here are the score of confusion matrix 
-![image](https://github.com/user-attachments/assets/0b929f85-8035-40dd-a86e-35edde82cd22)
+<p align="center">
+  <img width="670" alt="Project Pipeline" src="https://github.com/user-attachments/assets/3e720c7c-2145-4960-aecd-6f41ee6d9ef6">
+</p>
 
-After the model makes prediction we draw a confusion matrix .
-In medical diagnosis, precision maybe  more important than recall as false positives can lead to unnecessary treatments and procedures that carry risks for patients.
-Whereas recall might be more important because it's important to catch as many positive cases as possible, even if it leads to some false positives.
+## Transfer Learning with ResUNet 🌐
 
-<img width="326" alt="image" src="https://github.com/user-attachments/assets/1c29c17a-8ed6-462d-8951-4a6ff8a162d6">
-Building a resblock that will be used while making U-NET From Scratch for Image Segmentation. Resblock generally has residual connection which are used to maintain input signal these residual connections enable as to make very deep residual networks .
-<img width="653" alt="image" src="https://github.com/user-attachments/assets/50d1593a-1591-4889-90b4-81589aff53d6">
-building the standard structure of resunet that contains of 4 downsampling blocks 1 forward and 4 upsampling blocks.
-<img width="362" alt="image" src="https://github.com/user-attachments/assets/b72b93d3-43ae-459b-91ba-9e543db55377">
-output of our model
-<img width="841" alt="image" src="https://github.com/user-attachments/assets/ba12c66f-e842-4fa9-b35a-679c21853716">
+We leverage transfer learning using the ResUNet architecture, originally trained on the ImageNet dataset (1 million images, 1000 classes). The head is removed, and a custom head is added for binary classification.
 
+<p align="center">
+  <img width="630" alt="ResUNet Architecture" src="https://github.com/user-attachments/assets/7f46c57d-5378-4a12-924f-86bbabbba3a2">
+</p>
 
+## Model Performance and Evaluation 📊
 
+After the model makes predictions, a confusion matrix is drawn to evaluate its performance. In medical diagnosis, precision might be more critical than recall because false positives can lead to unnecessary treatments. However, recall is also crucial to ensure all possible positive cases are caught.
+
+<p align="center">
+  <img width="326" alt="Confusion Matrix" src="https://github.com/user-attachments/assets/0b929f85-8035-40dd-a86e-35edde82cd22">
+</p>
+
+## Building the ResBlock 🧱
+
+ResBlocks with residual connections are used to maintain input signals. These residual connections enable the creation of very deep residual networks, essential for the U-Net architecture.
+
+<p align="center">
+  <img width="653" alt="ResBlock" src="https://github.com/user-attachments/assets/50d1593a-1591-4889-90b4-81589aff53d6">
+</p>
+
+## ResUNet Structure 🏗️
+
+The ResUNet structure consists of four downsampling blocks, one forward block, and four upsampling blocks. This design ensures the network can capture both high-level and detailed features necessary for accurate segmentation.
+
+<p align="center">
+  <img width="362" alt="ResUNet Structure" src="https://github.com/user-attachments/assets/b72b93d3-43ae-459b-91ba-9e543db55377">
+</p>
+
+## Model Output 🖼️
+
+The output of our model showcases the detected and segmented tumor regions within the MRI scans.
+
+<p align="center">
+  <img width="841" alt="Model Output" src="https://github.com/user-attachments/assets/ba12c66f-e842-4fa9-b35a-679c21853716">
+</p>
