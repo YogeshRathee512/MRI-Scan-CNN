@@ -7,11 +7,14 @@ segmentation network (U-net build from scratch) then the  location of defect is 
 
 <img width="670" alt="image" src="https://github.com/user-attachments/assets/3e720c7c-2145-4960-aecd-6f41ee6d9ef6">
 
-leveraging transfer learning with resunet architecture which was original trainned on imagenet dataset(1 million images) and 1000 classes we remove the head and add custom head for binary classification
+leveraging transfer learning with resunet architecture which was original trainned on imagenet dataset(1 million images) and 1000 classes we remove the head and add custom head for binary classification.
 
+After the model makes prediction we draw a confusion matrix .
+In medical diagnosis, precision maybe  more important than recall as false positives can lead to unnecessary treatments and procedures that carry risks for patients.
+Whereas recall might be more important because it's important to catch as many positive cases as possible, even if it leads to some false positives.
 <img width="630" alt="image" src="https://github.com/user-attachments/assets/7f46c57d-5378-4a12-924f-86bbabbba3a2">
 
-
+Here are the score of confusion matrix 
 ![image](https://github.com/user-attachments/assets/0b929f85-8035-40dd-a86e-35edde82cd22)
 
 <img width="326" alt="image" src="https://github.com/user-attachments/assets/1c29c17a-8ed6-462d-8951-4a6ff8a162d6">
