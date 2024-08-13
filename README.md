@@ -1,11 +1,11 @@
 # MRI-Scan-CNN 🧠
 
-This project involves developing a deep learning pipeline that processes MRI scans to detect and locate brain tumors. The process is divided into two main tasks:
+This project involves developing a deep learning model that processes MRI scans to detect and locate brain tumors. The process is divided into two main tasks:
 
 1. **Classification**: Identify whether the MRI scan contains a defect (tumor).
 2. **Segmentation**: If a defect is detected, precisely locate it within the image.
 
-## Project Pipeline Overview 🔄
+## Project  Overview 🔄
 
 Initially, the MRI scan is passed through a classification network (ResNet) to determine if the image contains a defect. If a defect is detected, the image is then passed to a segmentation network (U-Net) to identify the exact location of the defect.
 
@@ -59,11 +59,6 @@ The model successfully classifies and segments tumors in MRI scans. Below is an 
   <img width="841" alt="Model Output" src="https://github.com/user-attachments/assets/ba12c66f-e842-4fa9-b35a-679c21853716">
 </p>
 
-The confusion matrix demonstrates the model's performance. With an accuracy of 98%, the classification model is highly reliable. In medical diagnosis, precision is critical as false positives can lead to unnecessary treatments. However, high recall is also essential to ensure no positive cases are missed.
-
-## Installation and Usage 🚀
-
-To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
