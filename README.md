@@ -29,8 +29,10 @@ After the model makes predictions, a confusion matrix is drawn to evaluate its p
   <img width="326" alt="Confusion Matrix" src="https://github.com/user-attachments/assets/0b929f85-8035-40dd-a86e-35edde82cd22">
 </p>
 
+### Confusion Matrix Scores in Table Format 🧾
+
 <p align="center">
-  ![Screenshot 2024-08-10 165621](https://github.com/user-attachments/assets/881a5ddf-97df-4617-ade2-7bd67a3f7fb9)
+  <img width="326" alt="Confusion Matrix Table" src="https://github.com/user-attachments/assets/881a5ddf-97df-4617-ade2-7bd67a3f7fb9">
 </p>
 
 ## Building the ResBlock 🧱
@@ -58,6 +60,10 @@ The model successfully classifies and segments tumors in MRI scans. Below is an 
 </p>
 
 The confusion matrix demonstrates the model's performance. With an accuracy of 98%, the classification model is highly reliable. In medical diagnosis, precision is critical as false positives can lead to unnecessary treatments. However, high recall is also essential to ensure no positive cases are missed.
+
+## Installation and Usage 🚀
+
+To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
