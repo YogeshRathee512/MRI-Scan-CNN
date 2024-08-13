@@ -3,7 +3,7 @@
 Dataframe containing image , mask and image id as input and perform 2 type of prediction on the image
 Initially, image is passed through the classification network(ResNet) which predicts whether the image has defect or not, the model
 predicts 98% accuracy that the image has defect or not (defect means tumor) , if the model labels the images as defect it passes the image to the
-segmentation network (U-net build from scratch) then the  location of defect is found
+segmentation network (U-net build from scratch) then the  location of defect is found.
 
 <img width="670" alt="image" src="https://github.com/user-attachments/assets/3e720c7c-2145-4960-aecd-6f41ee6d9ef6">
 
