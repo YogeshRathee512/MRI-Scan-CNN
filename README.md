@@ -30,7 +30,7 @@ After the model makes predictions, a confusion matrix is drawn to evaluate its p
 </p>
 
 <p align="center">
-  ![Screenshot 2024-08-10 165621](https://github.com/user-attachments/assets/37c0d97e-8da2-4b27-b3d6-5bcdba79021d)
+  ![Screenshot 2024-08-10 165621](https://github.com/user-attachments/assets/881a5ddf-97df-4617-ade2-7bd67a3f7fb9)
 </p>
 
 ## Building the ResBlock 🧱
